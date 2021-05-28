@@ -1,27 +1,33 @@
 {% load static %}
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet"  href= "{% static 'user/css/main.css' %}">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link href="{% static 'user/main.css' %}">
-    <title>
-      
-    </title>
+
   </head>
   <body>
-    <div id="navbar">
-      hello world
+    <div class="global-nav__ally-menu">
+    <div class ="global-nav__content">
+      <h1 class= "global-nav__branding">MNNIT</h1>
+      <div id="global-nav-search" class="global-nav__search"> Search</div>
+      <nav class="global-nav__nav" id="primary-navignation">
+        <ul class="global-nav__primary-items">
+          <li class="global-nav__primary-item">Home</li>
+          <li class="global-nav__primary-item">Network</li>
+          <li class="global-nav__primary-item">Jobs</li>
+          <li class="global-nav__primary-item">Message</li>
+        </ul>
+      </nav>
     </div>
-    <div class="container">
-        {% block content %}{% endblock content %}
     </div>
-    
-        
+    {% block content %}
+      
+    {% endblock content %}
+      
 
     <!-- Optional JavaScript; choose one of the two! -->
 

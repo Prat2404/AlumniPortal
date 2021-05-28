@@ -1,4 +1,36 @@
-.navbar
+body
 {
-    background-color: black;
+    background-color: aqua;
+}
+.global-nav__ally-menu {
+    display: flex;
+    width: 100%;
+   
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: var(--warm-gray-20,#f3f6f8);
+}
+.global-nav__content
+{
+    align-items: center;
+    display: flex;
+   
+    min-height: 100%;
+}
+.global-nav__primary-items
+{
+    display: flex;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    margin: auto;
+}
+nav ul {
+    list-style: none;
+}
+.global-nav__primary-item
+{
+    display: flex!important;
+    align-items: center!important;
+   
 }
