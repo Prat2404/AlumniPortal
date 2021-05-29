@@ -36,7 +36,7 @@ def login(request):
 
         if user is not None:
             auth.login(request,user)
-            return redirect('/')
+            return redirect('feed/')
         else:
             messages.error(request,'Invalid username or password')
     
