@@ -1,9 +1,11 @@
 from django.shortcuts import render,redirect
-from django.contrib.auth.models import User,auth
+from django.contrib.auth.models import User,auth,AnonymousUser
 from django.contrib import messages
 # Create your views here.
 
 def signup(request):
+    if not request.user.is_anonymous:
+        return redirect('/feed/')
     if request.method=='POST':
         first_name = request.POST['name']
         last_name = request.POST['lname']
@@ -28,6 +30,8 @@ def signup(request):
     return render(request,'user/signup.html')
 
 def login(request):
+    if not request.user.is_anonymous:
+        return redirect('/feed/')
     if request.method=='POST':
         username=request.POST['username']
         password=request.POST['pass']
@@ -41,3 +45,7 @@ def login(request):
             messages.error(request,'Invalid username or password')
     
     return render(request,'user/login.html')
+
+def logout(request):
+    auth.logout(request)
+    return redirect('/user/login')
