@@ -6,3 +6,4 @@ urlpatterns = [
     path('signup/',views.signup,name='user-signup'),
     path('logout/',views.logout,name='user-logout')
 ]
+app_name='user'

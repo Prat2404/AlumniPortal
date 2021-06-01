@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,12 +26,16 @@ SECRET_KEY = 'django-insecure-bvqkt%5mf4$c^d)bq5a7ip(z)b1_$s%p--^(vm6sio($_p$qjj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['165.227.91.61', 'www.alumni.in', 'alumni.in','localhost', '127.0.0.1']
 
 
 # Application definition
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
 
 INSTALLED_APPS = [
+    'client.apps.ClientConfig',
     'feed.apps.FeedConfig',
     'user.apps.UserConfig',
     'django.contrib.admin',

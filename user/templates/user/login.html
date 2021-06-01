@@ -7,7 +7,7 @@
     <div class="signin-content">
         <div class="signin-image">
             <figure><img src="{% static 'user/images/signin-image.jpg' %}" alt="login image"></figure>
-            <a href="http://localhost:8000/user/signup/" class="signup-image-link">Not a member,Register</a>
+            <a href='{% url "user:user-signup" %}' class="signup-image-link">Not a member,Register</a>
         </div>
         <div class="signin-form">
             <h2 class="form-title">Login</h2>
