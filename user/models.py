@@ -4,8 +4,7 @@ from phone_field import PhoneField
 from datetime import datetime
 
 # Create your models here.
-class Alumni(models.Model):
-    
+class Alumni(models.Model): 
     user=models.OneToOneField(User,on_delete=models.CASCADE)
     branch=models.CharField(max_length=50)
     year=models.IntegerField()

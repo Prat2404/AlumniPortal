@@ -18,8 +18,6 @@ from django.urls import path,include
 from django.conf.urls.static import static
 from . import settings
 urlpatterns = [
-    path('feed/',include('feed.urls',namespace='feed')),
-    path('user/', include('user.urls',namespace='user')),
     path('admin/', admin.site.urls),
     path('',include('client.urls',namespace='client')),
 ]
