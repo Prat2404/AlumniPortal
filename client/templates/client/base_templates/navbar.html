@@ -10,52 +10,19 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><img src="{% static 'client/images/logo.png' %}" alt="logo" /></a>
+        <a class="navbar-brand" href="#"><span>MNNIT</span></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right main-menu">
-          <li class="dropdown"><a href="#">Home</a></li>
+          <li class="dropdown"><a href="#"><i class = "fa fa-home"></i></a></li>
+          <li class="dropdown"><a href="#"><i class = "fa fa-users"></i></a></li>
+          <li class="dropdown"><a href="#"><i class = "fa fa-comments"></i></a></li>
+          <li class="dropdown"><a href="#"><i class = "fa fa-briefcase"></i></a></li>
+          <li class="dropdown"><a href="#"><i class = "fa fa-bell"></i></a></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Newsfeed <span><img src="{% static 'client/images/down-arrow.png' %}" alt="" /></span></a>
-              <ul class="dropdown-menu newsfeed-home">
-                <li><a href="#">Newsfeed</a></li>
-                <li><a href="#">Poeple Nearly</a></li>
-                <li><a href="#">My friends</a></li>
-                <li><a href="#">Chatroom</a></li>
-                <li><a href="#">Images</a></li>
-                <li><a href="#">Videos</a></li>
-              </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Timeline <span><img src="{% static 'client/images/down-arrow.png' %}" alt="" /></span></a>
-            <ul class="dropdown-menu login">
-              <li><a href="#">Timeline</a></li>
-              <li><a href="#">Timeline About</a></li>
-              <li><a href="#">Timeline Album</a></li>
-              <li><a href="#">Timeline Friends</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle pages" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">All Pages <span><img src="{% static 'client/images/down-arrow.png' %}" alt="" /></span></a>
-            <ul class="dropdown-menu page-list">
-              <li><a href="#">Landing Page</a></li>
-              <li><a href="#">Newsfeed</a></li>
-              <li><a href="#">Poeple Nearly</a></li>
-              <li><a href="#">My friends</a></li>
-              <li><a href="#">Chatroom</a></li>
-              <li><a href="#">Images</a></li>
-              <li><a href="#">Videos</a></li>
-              <li><a href="#">Timeline</a></li>
-              <li><a href="#">Timeline About</a></li>
-              <li><a href="#">Timeline Album</a></li>
-              <li><a href="#">Timeline Friends</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle pages" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile<span><img src="{% static 'client/images/down-arrow.png' %}" alt="" /></span></a>
+            <a href="#" class="dropdown-toggle pages" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class = "fa fa-user-circle"></i><span><img src="{% static 'client/images/down-arrow.png' %}" alt="" /></span></a>
             <ul class="dropdown-menu page-list">
               <li><a href="{% url 'client:profile-timeline' %}">Timeline</a></li>
               <li><a href="{% url 'client:profile-about' %}">About</a></li>
