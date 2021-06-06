@@ -1,8 +1,8 @@
 {% load static %}
 <div class="col-md-3 static">
     <div class="profile-card">
-        <img src="images/users/user-1.jpg" alt="user" class="profile-photo" />
-        <h5><a href="#" class="text-white">Sarah Cruiz</a></h5>
+        <img src="{{user.alumni.image.url}}" alt="user" class="profile-photo" />
+        <h5><a href="{% url 'client:profile-about' %}" class="text-white">{{user.username}}</a></h5>
         <a href="#" class="text-white"><i class="ion ion-android-person-add"></i> 1,299 followers</a>
     </div>
     <!--profile card ends-->
