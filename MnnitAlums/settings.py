@@ -36,7 +36,6 @@ MEDIA_URL = '/media/'
 
 INSTALLED_APPS = [
     'client.apps.ClientConfig',
-    'feed.apps.FeedConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

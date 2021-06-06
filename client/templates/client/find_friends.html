@@ -1,0 +1,45 @@
+{% extends 'client/base_templates/base.html' %}
+{% load static %}
+{% block content %}
+
+<div id="page-contents">
+    <div class="container">
+        <div class="row">
+
+            <!-- Newsfeed Common Side Bar Left
+          ================================================= -->
+            {% include 'client/base_templates/newsfeed_common_left.html' %}
+            <div class="col-md-7">
+
+                <!-- Post Create Box
+            ================================================= -->
+                {% include 'client/base_templates/post_create.html' %}
+                <!-- Post Content
+            ================================================= -->
+                <div class="people-nearby">
+                    <div class="nearby-user">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-2">
+                                <img src="images/users/user-15.jpg" alt="user" class="profile-photo-lg" />
+                            </div>
+                            <div class="col-md-7 col-sm-7">
+                                <h5><a href="#" class="profile-link">Sophia Page</a></h5>
+                                <p>Software Engineer</p>
+                                <p class="text-muted">500m away</p>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <button class="btn btn-primary pull-right">Add Friend</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- Newsfeed Common Side Bar Right
+          ================================================= -->
+            {% include 'client/base_templates/newsfeed_common_right.html' %}
+        </div>
+    </div>
+</div>
+{% endblock content %}

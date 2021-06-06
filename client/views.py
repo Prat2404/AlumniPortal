@@ -74,3 +74,6 @@ def profile_connections(request):
 
 def profile_albums(request):
     return render(request,'client/profile_album.html')
+
+def addconnections(request):
+    return render(request,'client/find_friends.html')
